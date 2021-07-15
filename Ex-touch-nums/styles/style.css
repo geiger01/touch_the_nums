@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(48, 48, 48);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 30rem;
+  height: 100%;
+  margin: auto;
+  margin-top: 6rem;
+}
+
+.cell {
+  cursor: pointer;
+  border-radius: 25%;
+  height: 6rem;
+  width: 6rem;
+  background-color: rgb(182, 100, 100);
+  border: 1px solid rgb(0, 0, 0);
+  transition: all 0.2s ease-in;
+}
+
+.cell h1 {
+  text-align: center;
+  color: rgb(253, 253, 253);
+  font: weight 300px;
+  margin-top: 1.5rem;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.cell:hover {
+  background-color: rgb(218, 163, 163);
+}
+
+.game-head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4rem;
+  color: rgb(233, 233, 233);
+  font-size: 2rem;
+}
+
+.game-head button {
+  margin-left: 6rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  width: 6rem;
+  height: 3.5rem;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: rgb(29, 29, 29);
+}
+
+/* //////////// */
+.rainbow {
+  background-color: #343a40;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.rainbow-1:hover {
+  background-image: linear-gradient(
+    90deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 80%,
+    #00c0ff 100%
+  );
+  animation: slidebg 5s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
